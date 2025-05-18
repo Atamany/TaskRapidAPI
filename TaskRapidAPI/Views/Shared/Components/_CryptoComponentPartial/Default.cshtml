@@ -1,0 +1,31 @@
+﻿@model CryptoViewModel
+
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-header bg-dark text-white">
+            <i class="fab fa-bitcoin me-2"></i>Kripto Paralar
+        </div>
+        <div class="card-body">
+            <div class="crypto-item">
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/2048px-Bitcoin.svg.png" style="width:50px;height:50px;" />Bitcoin (BTC)</span>
+                <span>@Model.data.tokens.Where(x=>x.symbol=="BTC").FirstOrDefault()?.price $</span>
+            </div>
+            <div class="crypto-item">
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png" style="width:50px;height:50px;" />Ethereum (ETH)</span>
+                <span>@Model.data.tokens.Where(x => x.symbol == "ETH").FirstOrDefault()?.price $</span>
+            </div>
+            <div class="crypto-item">
+                <span><img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png" style="width:50px;height:50px;" />Solana (SOL)</span>
+                <span>@Model.data.tokens.Where(x => x.symbol == "SOL").FirstOrDefault()?.price $</span>
+            </div>
+            <div class="crypto-item">
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Sui_Symbol_Sea.png" style="width:50px;height:50px;" />SUI (SUI)</span>
+                <span>@Model.data.tokens.Where(x => x.symbol == "SUI").FirstOrDefault()?.price $</span>
+            </div>
+            <div class="crypto-item">
+                <span><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/TON_ICON.png" style="width:50px;height:50px;" />The Open Network (TON)</span>
+                <span>@Model.data.tokens.Where(x => x.symbol == "TON").FirstOrDefault()?.price $</span>
+            </div>
+        </div>
+    </div>
+</div>

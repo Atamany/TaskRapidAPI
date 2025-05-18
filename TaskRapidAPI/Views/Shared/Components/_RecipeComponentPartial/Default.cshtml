@@ -1,0 +1,18 @@
+﻿@model RecipeViewModel
+<div class="col-12">
+    <div class="card">
+        <div class="card-header bg-secondary text-white">
+            <i class="fas fa-utensils me-2"></i>Günün Yemek Tarifi
+        </div>
+        <div class="card-body recipe-card">
+            <img src="@Model.image" class="recipe-image" alt="@Model.name">
+            <h5>@Model.name</h5>
+            <div class="recipe-meta">
+                <small><i class="fas fa-clock"></i> Hazırlama: @Model.prepareTime dk</small>
+                <small><i class="fas fa-fire"></i> Pişirme: @Model.cookTime dk</small>
+                <small><i class="fas fa-utensils"></i> @Model.servingSizes[0].scale Kişilik</small>
+            </div>
+            <p>@Model.description</p>
+        </div>
+    </div>
+</div>

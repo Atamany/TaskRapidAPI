@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Ana İçerik -->
+            <div class="col-12 p-4">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">
+                        <h2><i class="fas fa-chart-line me-2"></i>Dashboard</h2>
+                        <span class="made-by">Made by <a href="#" target="_blank">Atamany</a></span>
+                    </div>
+                    <button class="btn btn-outline-primary">
+                        <i class="fas fa-sync-alt me-2"></i>Yenile
+                    </button>
+                </div>
+
+                <!-- Döviz Kurları -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                <i class="fas fa-dollar-sign me-2"></i>USD/TRY
+                            </div>
+                            <div class="card-body stat-card">
+                                <h3>32.45 ₺</h3>
+                                <p class="trend-up">
+                                    <i class="fas fa-arrow-up"></i> 0.25%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <i class="fas fa-euro-sign me-2"></i>EUR/TRY
+                            </div>
+                            <div class="card-body stat-card">
+                                <h3>35.18 ₺</h3>
+                                <p class="trend-down">
+                                    <i class="fas fa-arrow-down"></i> 0.15%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-danger text-white">
+                                <i class="fas fa-pound-sign me-2"></i>GBP/TRY
+                            </div>
+                            <div class="card-body stat-card">
+                                <h3>41.23 ₺</h3>
+                                <p class="trend-up">
+                                    <i class="fas fa-arrow-up"></i> 0.45%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Akaryakıt Fiyatları -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                <i class="fas fa-gas-pump me-2"></i>Akaryakıt Fiyatları
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <i class="fas fa-gas-pump text-danger"></i>
+                                            <h5>Benzin</h5>
+                                            <h3>42.85 ₺</h3>
+                                            <small class="text-muted">Son güncelleme: 10:30</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <i class="fas fa-gas-pump text-primary"></i>
+                                            <h5>Dizel</h5>
+                                            <h3>38.95 ₺</h3>
+                                            <small class="text-muted">Son güncelleme: 10:30</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <i class="fas fa-gas-pump text-success"></i>
+                                            <h5>LPG</h5>
+                                            <h3>18.75 ₺</h3>
+                                            <small class="text-muted">Son güncelleme: 10:30</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <i class="fas fa-gas-pump text-warning"></i>
+                                            <h5>Mazot</h5>
+                                            <h3>39.45 ₺</h3>
+                                            <small class="text-muted">Son güncelleme: 10:30</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hava Durumu ve Kripto Paralar -->
+                <div class="row">
+                    <!-- Hava Durumu -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-warning text-dark">
+                                <i class="fas fa-cloud-sun me-2"></i>Hava Durumu
+                            </div>
+                            <div class="card-body weather-card">
+                                <i class="fas fa-cloud-sun weather-icon text-warning"></i>
+                                <h3>İstanbul</h3>
+                                <div class="d-flex justify-content-center align-items-center mb-2">
+                                    <h2 class="mb-0 me-2">18°C</h2>
+                                    <small class="text-muted">Hissedilen: 16°C</small>
+                                </div>
+                                <p class="mb-1">Parçalı Bulutlu</p>
+                                <p class="mb-0 text-muted">Nem: %65 | Rüzgar: 12 km/s</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kripto Paralar -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-dark text-white">
+                                <i class="fab fa-bitcoin me-2"></i>Kripto Paralar
+                            </div>
+                            <div class="card-body">
+                                <div class="crypto-item">
+                                    <span><i class="fab fa-bitcoin text-warning me-2"></i>Bitcoin</span>
+                                    <span class="trend-up">$43,250 <small><i class="fas fa-arrow-up"></i> 2.5%</small></span>
+                                </div>
+                                <div class="crypto-item">
+                                    <span><i class="fab fa-ethereum text-info me-2"></i>Ethereum</span>
+                                    <span class="trend-down">$2,850 <small><i class="fas fa-arrow-down"></i> 1.2%</small></span>
+                                </div>
+                                <div class="crypto-item">
+                                    <span><i class="fab fa-bitcoin text-secondary me-2"></i>Binance Coin</span>
+                                    <span class="trend-up">$412 <small><i class="fas fa-arrow-up"></i> 0.8%</small></span>
+                                </div>
+                                <div class="crypto-item">
+                                    <span><i class="fab fa-bitcoin text-primary me-2"></i>Cardano</span>
+                                    <span class="trend-up">$0.58 <small><i class="fas fa-arrow-up"></i> 3.1%</small></span>
+                                </div>
+                                <div class="crypto-item">
+                                    <span><i class="fab fa-bitcoin text-danger me-2"></i>Solana</span>
+                                    <span class="trend-down">$98.45 <small><i class="fas fa-arrow-down"></i> 0.5%</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Haberler ve Maç Skoru -->
+                <div class="row">
+                    <!-- Haberler -->
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header bg-danger text-white">
+                                <i class="fas fa-newspaper me-2"></i>Güncel Haberler
+                            </div>
+                            <div class="card-body">
+                                <div class="news-item">
+                                    <h6>Ekonomi Bakanı'ndan Önemli Açıklamalar</h6>
+                                    <small>Ekonomi Bakanı, yeni ekonomik paket hakkında detayları paylaştı. Piyasaları etkileyecek önemli kararlar açıklandı...</small>
+                                </div>
+                                <div class="news-item">
+                                    <h6>Teknoloji Devi Yeni Ürününü Tanıttı</h6>
+                                    <small>Şirket, yapay zeka destekli yeni ürününü tanıttı. Ürün, kullanıcı deneyimini tamamen değiştirecek özelliklere sahip...</small>
+                                </div>
+                                <div class="news-item">
+                                    <h6>İstanbul'da Ulaşımda Yeni Düzenleme</h6>
+                                    <small>Belediye, toplu taşıma sisteminde yeni düzenlemeler yapacağını açıkladı. Metro hatları genişletilecek...</small>
+                                </div>
+                                <div class="news-item">
+                                    <h6>Spor Dünyasında Transfer Gelişmeleri</h6>
+                                    <small>Transfer döneminde son durum ve beklenen transferler. Büyük kulüplerden flaş açıklamalar...</small>
+                                </div>
+                                <div class="news-item">
+                                    <h6>Sağlık Bakanlığı'ndan Önemli Açıklama</h6>
+                                    <small>Sağlık Bakanlığı, yeni sağlık politikalarını açıkladı. Vatandaşlara yönelik yeni hizmetler duyuruldu...</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Maç Skoru -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <i class="fas fa-futbol me-2"></i>Son Maç
+                            </div>
+                            <div class="card-body match-score">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-center">
+                                        <img src="https://via.placeholder.com/80" class="team-logo" alt="Galatasaray">
+                                        <h6>Galatasaray</h6>
+                                    </div>
+                                    <div class="team-score">3 - 1</div>
+                                    <div class="text-center">
+                                        <img src="https://via.placeholder.com/80" class="team-logo" alt="Fenerbahçe">
+                                        <h6>Fenerbahçe</h6>
+                                    </div>
+                                </div>
+                                <p class="text-center mb-2">Süper Lig | 23. Hafta</p>
+                                <small class="text-center d-block">Maç Sonu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Günün Yemek Tarifi -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <i class="fas fa-utensils me-2"></i>Günün Yemek Tarifi
+                        </div>
+                        <div class="card-body recipe-card">
+                            <img src="https://via.placeholder.com/800x400" class="recipe-image" alt="Mantı">
+                            <h5>Mantı Tarifi</h5>
+                            <div class="recipe-meta">
+                                <small><i class="fas fa-clock"></i> Hazırlama: 45 dk</small>
+                                <small><i class="fas fa-fire"></i> Pişirme: 20 dk</small>
+                                <small><i class="fas fa-utensils"></i> 4 Kişilik</small>
+                                <small><i class="fas fa-star"></i> Zorluk: Orta</small>
+                            </div>
+                            <p>Geleneksel Türk mutfağının vazgeçilmez lezzetlerinden mantı, el açması hamur ve kıymalı iç harcı ile hazırlanan nefis bir tarif. Özenle hazırlanan hamur, içine konulan baharatlı kıyma ve üzerine dökülen sarımsaklı yoğurt ile muhteşem bir lezzet sunuyor. Bu tarif, nesilden nesile aktarılan bir miras niteliğinde...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,21 @@
+﻿@model WeatherViewModel
+@{
+    int sicaklik = (int)(Model.main.temp - 273.15);
+    int hissedilen = (int)(Model.main.feels_like - 273.15);
+}
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-header bg-warning text-dark">
+            <i class="fas fa-cloud-sun me-2"></i>Hava Durumu
+        </div>
+        <div class="card-body weather-card">
+            <i class="fas fa-cloud-sun weather-icon text-warning"></i>
+            <h3>İstanbul</h3>
+            <div class="d-flex justify-content-center align-items-center mb-2">
+                <h2 class="mb-0 me-2">@sicaklik °C</h2><br />
+                <small class="text-muted">Hissedilen: @hissedilen °C</small>
+            </div>
+            <p class="mb-1">@Model.weather.FirstOrDefault()?.main</p>
+        </div>
+    </div>
+</div>

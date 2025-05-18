@@ -1,0 +1,38 @@
+﻿@model FuelViewModel
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <i class="fas fa-gas-pump me-2"></i>Akaryakıt Fiyatları
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <i class="fas fa-gas-pump text-danger"></i>
+                            <h5>Benzin</h5>
+                            <h3>@Model.data.FirstOrDefault()?.prices.FirstOrDefault()?.benzin ₺</h3>
+                            <small class="text-muted">Son güncelleme: @Model.data.FirstOrDefault()?.prices.FirstOrDefault()?.guncellenme_tarihi</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <i class="fas fa-gas-pump text-primary"></i>
+                            <h5>Motorin</h5>
+                            <h3>@Model.data.FirstOrDefault()?.prices.FirstOrDefault()?.motorin</h3>
+                            <small class="text-muted">Son güncelleme: @Model.data.FirstOrDefault()?.prices.FirstOrDefault()?.guncellenme_tarihi</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <i class="fas fa-gas-pump text-success"></i>
+                            <h5>LPG</h5>
+                            <h3>@Model.data.FirstOrDefault()?.prices.FirstOrDefault()?.lpg₺</h3>
+                            <small class="text-muted">Son güncelleme: @Model.data.FirstOrDefault()?.prices.FirstOrDefault()?.guncellenme_tarihi</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

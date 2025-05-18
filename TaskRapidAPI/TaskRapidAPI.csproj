@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\Template\.vs\ProjectSettings.json" />
+    <Content Include="wwwroot\Template\.vs\Template\v17\DocumentLayout.json" />
+    <Content Include="wwwroot\Template\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Template\.vs\slnx.sqlite" />
+    <None Include="wwwroot\Template\.vs\Template\config\applicationhost.config" />
+    <None Include="wwwroot\Template\.vs\Template\CopilotIndices\17.13.444.19527\CodeChunks.db" />
+    <None Include="wwwroot\Template\.vs\Template\CopilotIndices\17.13.444.19527\SemanticSymbols.db" />
+    <None Include="wwwroot\Template\.vs\Template\FileContentIndex\7a1799fd-3124-48d7-96ff-1e906893d13c.vsidx" />
+    <None Include="wwwroot\Template\.vs\Template\FileContentIndex\c08446a1-dd83-4846-8517-477a38cd73a1.vsidx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+</Project>
